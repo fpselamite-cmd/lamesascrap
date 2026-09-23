@@ -401,7 +401,7 @@ async function submitCheckout(){
   coStatus.style.display = 'block';
   try{
     await postToDiscord(name, phone);
-    coStatus.textContent = 'Work order submitted! Our team has been notified.';
+    coStatus.textContent = 'Work order submitted! Our team has been notified. Once your items are imported they will be available in the store. This is to alleviate logistical concerns and mitigate time for our staff.';
   }catch(err){
     coStatus.textContent = 'Order saved locally, but we couldn\'t reach Discord from here (this preview may be sandboxed — host the page to enable it).';
   }
